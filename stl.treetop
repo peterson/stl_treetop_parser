@@ -79,15 +79,15 @@ grammar STL
       end
     }
   end
-  
+
   # optional whitespace
   rule s
-    [ \t]*
+    S?
   end
-  
+
   # mandatory space
   rule S
-    " " s
+    [ \t]*
   end
   
   rule newline
